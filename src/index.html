@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="">
+<head>
+  <meta charset="UTF-8">
+  <title>domashka17</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+<main>
+  <form name="userInfo" id="userInfo" class="form form__success">
+    <h1 class="form__heading">To order</h1>
+    <div class="form__control">
+      <label for="userName" class="form__label">Full Name</label>
+      <input
+        type="text"
+        id="userName"
+        name="userName"
+        data-validation-rule="name"
+        class="input form__input"
+        placeholder="Enter your full name"
+      />
+      <p class="form__validation--error"></p>
+    </div>
+    <div class="form__control">
+      <label for="userPhone" class="form__label">Phone</label>
+      <input
+        type="text"
+        id="userPhone"
+        name="userPhone"
+        data-validation-rule="phone"
+        class="input form__input"
+        placeholder="Enter phone number"
+      />
+      <p class="form__validation--error"></p>
+    </div>
+    <div class="form__control">
+      <label for="userEmail" class="form__label">Email</label>
+      <input
+        type="text"
+        id="userEmail"
+        name="userEmail"
+        data-validation-rule="email"
+        class="input form__input"
+        placeholder="Enter email"
+      />
+      <p class="form__validation--error"></p>
+    </div>
+    <div class="form__control">
+      <label for="userCard" class="form__label">Card number</label>
+      <input
+        type="text"
+        id="userCard"
+        name="userCard"
+        data-validation-rule="card"
+        class="input form__input"
+        placeholder="Enter card number"
+      />
+      <p class="form__validation--error"></p>
+    </div>
+    <p class="form__validation--success">Success!</p>
+    <button type="submit" class="btn btn-primary">Save</button>
+  </form>
+</main>
+</body>
+<script type="module" src="./index.js"></script>
+</html>
